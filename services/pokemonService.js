@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export async function pokemonService(name) {
+export async function pokemonService(id) {
   try {
     const { data } = await axios.get(
-      `https://pokeapi.co/api/v2/pokemon/${name}`
+      `https://pokeapi.co/api/v2/pokemon/${id}`
     );
 
     return data;

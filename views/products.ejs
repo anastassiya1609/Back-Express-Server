@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Catalog - Pokémon Skins Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <%- include("./partials/header.ejs") %>
+
+        <section class="catalog">
+            <h2>Skin Catalog</h2>
+            <div class="catalog-wrapper">
+                <% data.forEach((item, id)=> { %>
+                    <div class="skin-card">
+                        <div class="skin-info">
+                            <h3>
+                                <%= item.name %>
+                            </h3>
+                            <a href="/product/<%= id + 1 %>" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Pokémon Skins Shop. All rights reserved.</p>
+        </footer>
+
+</body>
+
+</html>

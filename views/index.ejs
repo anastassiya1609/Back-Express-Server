@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Skins Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <%- include("./partials/header.ejs") %>
+
+    <!-- Intro Section -->
+    <section class="intro" id="intro">
+        <h2>Welcome to Pokémon Skins Shop!</h2>
+        <p>Explore our exclusive, high-quality skins and transform your Pokémon like never before!</p>
+        <a href="/product" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature">
+            <h3>Exclusive Skins</h3>
+            <p>Every skin is designed with unique features and high-quality details that make your Pokémon stand out in the game.</p>
+        </div>
+        <div class="feature">
+            <h3>Safe & Secure</h3>
+            <p>Our skins are completely safe for in-game use, ensuring no bans, just endless fun!</p>
+        </div>
+        <div class="feature">
+            <h3>Instant Access</h3>
+            <p>Purchase and download your skin instantly with our seamless and secure checkout process.</p>
+        </div>
+    </section>
+
+    <!-- Skin Gallery Section -->
+    <section class="skins" id="gallery">
+        <h2>Popular Skins</h2>
+        <div class="skin-cards">
+            <div class="skin-card">
+                <div class="skin-card-content">
+                    <h3>Classic Charmander</h3>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander" class="pokemon-image">
+                    <p><strong>Type:</strong> Fire</p>
+                    <p><strong>Rarity:</strong> Rare</p>
+                    <p><strong>Special Feature:</strong> Glowing tail</p>
+                    <a href="/product" class="buy-button">View Details</a>
+                </div>
+            </div>
+            <div class="skin-card">
+                <div class="skin-card-content">
+                    <h3>Shiny Pikachu</h3>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu" class="pokemon-image">
+                    <p><strong>Type:</strong> Electric</p>
+                    <p><strong>Rarity:</strong> Ultra Rare</p>
+                    <p><strong>Special Feature:</strong> Sparkling eyes</p>
+                    <a href="/product" class="buy-button">View Details</a>
+                </div>
+            </div>
+            <div class="skin-card">
+                <div class="skin-card-content">
+                    <h3>Dark Gyarados</h3>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" alt="Gyarados" class="pokemon-image">
+                    <p><strong>Type:</strong> Water/Flying</p>
+                    <p><strong>Rarity:</strong> Legendary</p>
+                    <p><strong>Special Feature:</strong> Black scales with red eyes</p>
+                    <a href="/product" class="buy-button">View Details</a>
+                </div>
+            </div>
+            <div class="skin-card">
+                <div class="skin-card-content">
+                    <h3>Golden Bulbasaur</h3>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur" class="pokemon-image">
+                    <p><strong>Type:</strong> Grass/Poison</p>
+                    <p><strong>Rarity:</strong> Rare</p>
+                    <p><strong>Special Feature:</strong> Golden leaves</p>
+                    <a href="/product" class="buy-button">View Details</a>
+                </div>
+        </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="cta">
+        <h2>Ready to transform your Pokémon?</h2>
+        <a href="/product" class="cta-button">View Skins</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pokémon Skins Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

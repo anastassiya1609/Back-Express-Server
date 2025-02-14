@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu Skin - Pokémon Skins Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <section class="skin-details">
+        <div class="skin-gallery">
+            <div class="skin-image">
+                <img src="<%= data.sprites.front_default %>" alt="<%= data.name %> Front">
+            </div>
+            <div class="skin-image">
+                <img src="<%= data.sprites.back_default %>" alt="<%= data.name %> Back">
+            </div>
+            <div class="skin-image">
+                <img src="<%= data.sprites.front_shiny %>" alt="<%= data.name %> Shiny Front">
+            </div>
+            <div class="skin-image">
+                <img src="<%= data.sprites.back_shiny %>" alt="<%= data.name %> Shiny Back">
+            </div>
+        </div>
+        <div class="skin-description">
+            <h2 ><%= data.name %></h2>
+            <p>Category: <%= data.types[0].type.name  %></p>
+            <p>Description: Transform your Pikachu into a true hero with this exclusive skin, adding a spark of excitement to your gameplay!</p>
+            <a href="/" class="buy-button">Buy Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pokémon Skins Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
